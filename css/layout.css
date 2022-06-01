@@ -1,13 +1,58 @@
+/*Layout for 4-page Website Project */
+/*Universal appliers*/
+* {
+    background-color: rgb(255, 255, 235);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+/*Header layout
+navigation bar and text*/
 .navigation_bar {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    background-color: aquamarine;
+    background-color: rgb(183, 244, 224);
+    padding: 10px;
+    border-right: 10px solid rgb(8, 95, 95);
+    border-left: 10px solid rgb(8, 95, 95);
+    border-radius: 10px;
+    height: 20px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+
 }
 
 .navigation_bar a {
     color: black;
     font-style: normal;
-    font-family: Arial, Helvetica, sans-serif;
     text-decoration: unset;
+    background-color: rgb(183, 244, 224);
+    text-shadow: 0.3px 0.3px 0 #7A7A7A;
+}
+
+.navigation_bar a:hover {
+    font-size: large;
+}
+
+
+/* Content below navigation bar in header
+Audio layout*/
+.audio {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width:20%;
+    height: auto;
+    position: relative;
+    top: -70px; /*Formatting to place audio on same plane as header*/
+}
+
+.audio a{
+    text-align: center;
+}
+
+/*Header Title*/
+.header-main {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
 }
